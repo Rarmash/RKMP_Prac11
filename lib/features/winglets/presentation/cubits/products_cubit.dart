@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../data/app_data.dart';
-import '../models/product.dart';
+import '../../domain/models/product.dart';
+import '../../domain/repositories/products_repository.dart';
 
 class ProductsState extends Equatable {
   final List<Product> products;
@@ -13,25 +13,25 @@ class ProductsState extends Equatable {
 }
 
 class ProductsCubit extends Cubit<ProductsState> {
-  final AppData data;
-  ProductsCubit(this.data) : super(const ProductsState([]));
+  final ProductsRepository repository;
+  ProductsCubit(this.repository) : super(const ProductsState([]));
 
-  void load() => emit(ProductsState(data.products));
+  void load() => emit(ProductsState(repository.getProducts()));
 
-  Product? findById(int id) => data.findProduct(id);
+  Product? findById(int id) => repository.findById(id);
 
   void remove(int id) {
-    data.removeProduct(id);
+    repository.remove(id);
     load();
   }
 
   void addOrRestock({required int id, required String name, required int qty}) {
-    data.addOrRestock(id: id, name: name, qty: qty);
+    repository.addOrRestock(id: id, name: name, qty: qty);
     load();
   }
 
   bool order(int id, int qty) {
-    final ok = data.orderProduct(id, qty);
+    final ok = repository.order(id, qty);
     load();
     return ok;
   }

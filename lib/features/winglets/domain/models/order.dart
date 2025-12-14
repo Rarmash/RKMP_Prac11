@@ -1,5 +1,5 @@
 class Order {
-  final String id; // строковый id для истории
+  final String id;
   final int productId;
   final String productName;
   final int quantity;

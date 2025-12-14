@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../cubits/cart_cubit.dart';
 import '../cubits/history_cubit.dart';
 import '../cubits/products_cubit.dart';
-import '../models/order.dart';
+import '../../domain/models/order.dart';
 
 class OrderScreen extends StatefulWidget {
   const OrderScreen({super.key});

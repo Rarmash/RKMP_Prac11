@@ -1,16 +1,16 @@
 import 'package:go_router/go_router.dart';
 
-import '../features/winglets/screens/main_menu_screen.dart';
-import '../features/winglets/screens/product_list_screen.dart';
-import '../features/winglets/screens/product_details_screen.dart';
-import '../features/winglets/screens/order_screen.dart';
-import '../features/winglets/screens/cart_screen.dart';
-import '../features/winglets/screens/stock_manage_screen.dart';
-import '../features/winglets/screens/history_screen.dart';
-import '../features/winglets/screens/history_details_screen.dart';
-import '../features/winglets/screens/profile_screen.dart';
-import '../features/winglets/screens/settings_screen.dart';
-import '../features/winglets/screens/search_screen.dart';
+import '../features/winglets/presentation/screens/main_menu_screen.dart';
+import '../features/winglets/presentation/screens/product_list_screen.dart';
+import '../features/winglets/presentation/screens/product_details_screen.dart';
+import '../features/winglets/presentation/screens/order_screen.dart';
+import '../features/winglets/presentation/screens/cart_screen.dart';
+import '../features/winglets/presentation/screens/stock_manage_screen.dart';
+import '../features/winglets/presentation/screens/history_screen.dart';
+import '../features/winglets/presentation/screens/history_details_screen.dart';
+import '../features/winglets/presentation/screens/profile_screen.dart';
+import '../features/winglets/presentation/screens/settings_screen.dart';
+import '../features/winglets/presentation/screens/search_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/main',

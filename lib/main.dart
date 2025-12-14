@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'app/di.dart';
+import 'core/di/di.dart';
 import 'app/app.dart';
-import 'features/winglets/cubits/cart_cubit.dart';
-import 'features/winglets/cubits/history_cubit.dart';
-import 'features/winglets/cubits/products_cubit.dart';
-import 'features/winglets/cubits/profile_cubit.dart';
-import 'features/winglets/cubits/settings_cubit.dart';
+import 'features/winglets/presentation/cubits/cart_cubit.dart';
+import 'features/winglets/presentation/cubits/history_cubit.dart';
+import 'features/winglets/presentation/cubits/products_cubit.dart';
+import 'features/winglets/presentation/cubits/profile_cubit.dart';
+import 'features/winglets/presentation/cubits/settings_cubit.dart';
 
 void main() {
   setupDi();

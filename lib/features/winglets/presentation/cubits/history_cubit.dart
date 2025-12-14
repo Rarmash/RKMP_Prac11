@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../data/app_data.dart';
-import '../models/order.dart';
+import '../../data/app_data.dart';
+import '../../domain/models/order.dart';
 
 class HistoryState extends Equatable {
   final List<Order> orders;

@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../cubits/history_cubit.dart';
-import '../../../utils/format_utils.dart';
+import '../../../../utils/format_utils.dart';
 
 class HistoryScreen extends StatelessWidget {
   const HistoryScreen({super.key});

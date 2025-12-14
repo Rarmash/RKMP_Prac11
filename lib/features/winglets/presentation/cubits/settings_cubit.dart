@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../data/app_data.dart';
+import '../../data/app_data.dart';
 
 class SettingsState extends Equatable {
   final bool isDark;

@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../models/order.dart';
+import '../../domain/models/order.dart';
 
 class CartState extends Equatable {
   final Order? order;

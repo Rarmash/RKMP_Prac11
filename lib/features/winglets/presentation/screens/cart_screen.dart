@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../cubits/cart_cubit.dart';
-import '../../../utils/format_utils.dart';
+import '../../../../utils/format_utils.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

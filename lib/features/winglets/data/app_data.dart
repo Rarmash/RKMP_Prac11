@@ -1,5 +1,5 @@
-import '../models/order.dart';
-import '../models/product.dart';
+import '../domain/models/order.dart';
+import '../domain/models/product.dart';
 
 class AppData {
   String userName = 'Андрей Гришин';
@@ -12,7 +12,6 @@ class AppData {
     const Product(id: 5, name: 'Комплект подкрылков', quantity: 7),
   ];
 
-  // история заказов
   final List<Order> _history = [];
 
   bool isDarkTheme = false;
